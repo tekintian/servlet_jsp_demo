@@ -3,7 +3,9 @@
 ## jsp开发常见问题
 1. out对象为何可以直接使用？
 	因为 out 对象在JSP中属于内置对象，jsp中一共有9个内置对象【不用声明，可直接只用的对象】
-	[JSP九大内置对象及四个作用域详解](docs/JSP九大内置对象及四个作用域详解.md)
+
+2. [JSP九大内置对象及四个作用域详解](docs/JSP九大内置对象及四个作用域详解.md)
+3. [SimpleDateFormat使用详解](docs/SimpleDateFormat使用详解.md)
 
 
 ## IDEA 使用Gradle运行jsp项目
