@@ -18,6 +18,9 @@
     compileOnly('javax.servlet.jsp:javax.servlet.jsp-api:2.3.2-b02')
     compileOnly('javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1')
 
+-  compileOnly 仅在编译的时候使用，不会发布到 lib目录； compile 会跟随项目发布到 lib目录
+
+
 - 完整的 build.gradle文件
 ```gradle
 plugins {

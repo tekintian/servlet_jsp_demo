@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
 
-//编译依赖
+//编译依赖： compileOnly 仅在编译的时候使用，不会发布到 lib目录； compile 会跟随项目发布到 lib目录
     compileOnly('javax.servlet:javax.servlet-api:4.0.1')
     compileOnly('javax.servlet.jsp:javax.servlet.jsp-api:2.3.2-b02')
     compileOnly('javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1')
