@@ -12,8 +12,11 @@
   </head>
   <body>
   <h1>JSP Demo Project</h1>
+  <%-- JSp 专用注释
+  config  相当于 request.getServletContext()
+  --%>
   <%
-    SimpleDateFormat simpleDateFormat=new SimpleDateFormat(request.getServletContext().getInitParameter("DATE_FORMAT"));
+    SimpleDateFormat simpleDateFormat=new SimpleDateFormat(config.getInitParameter("DATE_FORMAT"));
     String now=simpleDateFormat.format(new java.util.Date());
 
     out.println("Hello world! 当前时间是："+ now);

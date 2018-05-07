@@ -31,6 +31,14 @@ application 服务器启动到停止这段时间
   session:实现了HttpSession接口
   application对象实现的接口ServletContext 
 
+
+- JSP九大内置对象简述
+![JSP九大内置对象简述.png](JSP九大内置对象简述.png)
+
+- JSP九大内置对象对应Servlet
+![JSP九大内置对象对应Servlet.png](JSP九大内置对象对应Servlet.png "JSP九大内置对象对应Servlet")
+
+
 ### 1.out对象：向客户端输出信息
 
 主要有两个方法，print和println，后者不能实现换行  

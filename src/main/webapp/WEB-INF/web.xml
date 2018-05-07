@@ -11,7 +11,7 @@
     </context-param>
     <context-param>
         <param-name>DATE_FORMAT</param-name>
-        <param-value>Y-M-d HH:mm:ss E z</param-value>
+        <param-value>Y-MM-dd HH:mm:ss E z</param-value>
     </context-param>
     <!--密码加扰字符串-->
     <context-param>
