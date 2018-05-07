@@ -7,7 +7,7 @@
     <!--调用方法 String HOME_URL=this.getServletConfig().getInitParameter("HOME_URL"); -->
     <context-param>
         <param-name>HOME_URL</param-name>
-        <param-value>http://localhost:8090/servlet_user_manage/</param-value>
+        <param-value>http://localhost:8090/jsp_demo/</param-value>
     </context-param>
     <context-param>
         <param-name>DATE_FORMAT</param-name>
@@ -19,6 +19,10 @@
         <param-value>www.yunnan.ws</param-value>
     </context-param>
 
+    <servlet>
+        <servlet-name>Calculation</servlet-name>
+        <servlet-class>cn.tekin.demo.Calculation</servlet-class>
+    </servlet>
 
 
     <welcome-file-list>
