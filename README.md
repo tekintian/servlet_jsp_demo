@@ -1,5 +1,20 @@
 # Gradle JSP演示项目
 
+jsp + servlet 实现简单 加减乘除计算器， 2种数据格式，直接显示或者返回JSON
+
+##API请求
+- 需要传递4个参数  请求方式：POST 或 get
+
+参数 | 参数说明 | 是否必填
+---- | ---- | ----
+num1 | 第一个数 | 是 |
+num2  | 第二个数 |  是 | 
+oper |  操作符 | 是 |
+t  |  json 返回的数据格式 | 是 | 
+
+- get请求示例： 
+    http://localhost:8090/jsp_demo/calculation.do?num1=12&num2=99&oper=-&t=json
+
 ## jsp开发常见问题
 1. out对象为何可以直接使用？
 	因为 out 对象在JSP中属于内置对象，jsp中一共有9个内置对象【不用声明，可直接只用的对象】
