@@ -9,7 +9,7 @@
 对象名称 | 类型 | 对应的包 | 作用域
 ---- | --- | --- | --- 
 request      |       请求对象　         |     类型 javax.servlet.ServletRequest     |     作用域 Request
-response      |      响应对象          |      类型 javax.servlet.SrvletResponse        作用域 Page
+response      |      响应对象          |      类型 javax.servlet.SrvletResponse      |      作用域 Page
 pageContext    |     页面上下文对象     |     类型 javax.servlet.jsp.PageContext     |    作用域 Page
 session        |     会话对象           |     类型 javax.servlet.http.HttpSession   |     作用域 Session
 application    |     应用程序对象       |     类型 javax.servlet.ServletContext      |    作用域 Application
