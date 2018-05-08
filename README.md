@@ -21,7 +21,7 @@ t  |  json 返回的数据格式 | 是 |
 
 2. [JSP九大内置对象及四个作用域详解](docs/JSP九大内置对象及四个作用域详解.md)
 3. [SimpleDateFormat使用详解](docs/SimpleDateFormat使用详解.md)
-
+4. [Gradle_Scope依赖范围详解.md](docs/Gradle_Scope依赖范围详解.md)
 
 ## IDEA 使用Gradle运行jsp项目
 1. 新建gradle项目,类型选择 java 与web；
