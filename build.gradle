@@ -14,6 +14,8 @@ repositories {
 
 dependencies {
 
+    compile group: 'javax.mail', name: 'javax.mail-api', version: '1.6.1'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.46'
 //编译依赖： compileOnly 仅在编译的时候使用，不会发布到 lib目录； compile 会跟随项目发布到 lib目录
     compileOnly('javax.servlet:javax.servlet-api:4.0.1')
     compileOnly('javax.servlet.jsp:javax.servlet.jsp-api:2.3.2-b02')

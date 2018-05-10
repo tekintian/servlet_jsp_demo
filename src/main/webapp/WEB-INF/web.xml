@@ -10,6 +10,10 @@
         <param-value>http://localhost:8090/jsp_demo/</param-value>
     </context-param>
     <context-param>
+        <param-name>CPATH</param-name>
+        <param-value>/jsp_demo</param-value>
+    </context-param>
+    <context-param>
         <param-name>DATE_FORMAT</param-name>
         <param-value>Y-MM-dd HH:mm:ss E z</param-value>
     </context-param>
@@ -18,10 +22,9 @@
         <param-name>pwSalt</param-name>
         <param-value>www.yunnan.ws</param-value>
     </context-param>
-
     <servlet>
-        <servlet-name>Calculation</servlet-name>
-        <servlet-class>cn.tekin.demo.Calculation</servlet-class>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>cn.tekin.myshopping.controler.Logout</servlet-class>
     </servlet>
 
 

@@ -8,6 +8,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * 简单的计算器的实现
+ * web 与API调用
+ */
 @WebServlet(name = "Calculation", value = "/calculation.do")
 public class Calculation extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
