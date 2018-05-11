@@ -11,22 +11,25 @@ import java.io.PrintWriter;
 
 @WebServlet("/Logout.do")
 public class Logout extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request,response);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
+            IOException {
+        doGet(request, response);
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,
+            IOException {
         //删除SESSION
         request.getSession().removeAttribute("loginUser");
 
-        Cookie cookie=new Cookie("loginUser","u");
+        Cookie cookie = new Cookie("loginUser", "u");
         cookie.setMaxAge(0);
         response.addCookie(cookie);
-        PrintWriter out=response.getWriter();
+        PrintWriter out = response.getWriter();
         out.println("成功退出！");
         response.setStatus(302);
-        response.setHeader("Refresh","3;url="+request.getServletContext().getInitParameter("HOME_URL") + "myshopping.jsp");
-       return;
+        response.setHeader("Refresh", "3;url=" + request.getServletContext().getInitParameter("HOME_URL") +
+                "myshopping.jsp");
+        return;
 
     }
 }
