@@ -3,8 +3,6 @@ package cn.tekin.myshopping.domain;
 
 public class Users {
     //这是一个userbean
-
-
     private int id;
     private String name;
     private String pwd;

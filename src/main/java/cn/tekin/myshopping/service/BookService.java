@@ -11,12 +11,11 @@ public class BookService {
     //根据书的编号，返回一个Book
     public Book getBookById(String id) {
         Book book = new Book();
-        String sql = "select * from book where id=?";
+        String sql = "select id,name,author,publishHouse,price,nums from book where id=?";
         String paras[] = {id};
         ArrayList al = new SqlHelper().executeQuery(sql, paras);
         if (al.size() == 1) {
-            Object obj[] = (Object[]) al.get(0);
-
+            Object obj[]= (Object[]) al.get(0);
             book.setId(Integer.parseInt(obj[0].toString()));
             book.setName(obj[1].toString());
             book.setAuthor(obj[2].toString());

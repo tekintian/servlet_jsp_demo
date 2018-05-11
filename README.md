@@ -78,4 +78,47 @@ C:\Users\{你的电脑的用户名}\.IntelliJIdea2018.1\system\tomcat\Unnamed_{�
 	此目录下面存放了所有的IDEA软件中创建的项目的所有运行配置文件和JSP翻译的源文件等文件
 
 
+#获取数据库插入记录ID, Get ID of inserted record in database
+- For MySQL and Java Derby database, use the following code:
+```java
+String sql = "YOUR INSERT STATEMENT HERE";
+ 
+PreparedStatement ps = conn.prepareStatement(sql,
+        Statement.RETURN_GENERATED_KEYS);
+ 
+ps.execute();
+ 
+ResultSet rs = ps.getGeneratedKeys();
+int generatedKey = 0;
+if (rs.next()) {
+    generatedKey = rs.getInt(1);
+}
+ 
+System.out.println("Inserted record's ID: " + generatedKey);
+```
 
+- For Oracle database, use the following code:
+```java
+PreparedStatement statement = conn.prepareStatement(sql,
+        Statement.RETURN_GENERATED_KEYS);
+ 
+statement.execute();
+ 
+PreparedStatement ps = connection
+        .prepareStatement("select your_table_id_sequence.currval from dual");
+ 
+ResultSet rs = ps.executeQuery();
+if (rs.next()) {
+    generatedKey = (int) rs.getLong(1);
+}
+ 
+System.out.println("Inserted record's ID: " + generatedKey);
+
+```
+
+## sql.Date 与 util.Date 2种日期对象使用
+- 当日期对象对象与数据库关联的时候使用
+java.sql.Date
+
+- 如果日期对象与我们的业务逻辑相关时使用 
+java.util.Date

@@ -1,19 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Tekin
-  Date: 2018/5/7
-  Time: 22:49
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Calculation count</title>
     <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container" style="margin: 2rem auto 1rem;">
-    <form action="<%=request.getServletContext().getInitParameter("HOME_URL") %>calculation.do" method="post">
+    <form action="<%=request.getServletContext().getInitParameter("HOME_URL") %>Calculation.do" method="post">
         <div class="form-group">
             <label for="num1" class="col-sm-2 control-label">第一个数</label>
             <div class="col-sm-10">

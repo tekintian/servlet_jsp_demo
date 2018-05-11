@@ -7,11 +7,11 @@
     <!--调用方法 String HOME_URL=this.getServletConfig().getInitParameter("HOME_URL"); -->
     <context-param>
         <param-name>HOME_URL</param-name>
-        <param-value>http://localhost:8090/jsp_demo/</param-value>
+        <param-value>http://localhost:8090/servlet_jsp_demo/</param-value>
     </context-param>
     <context-param>
         <param-name>CPATH</param-name>
-        <param-value>/jsp_demo</param-value>
+        <param-value>/servlet_jsp_demo</param-value>
     </context-param>
     <context-param>
         <param-name>DATE_FORMAT</param-name>

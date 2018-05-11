@@ -12,7 +12,7 @@ import java.io.PrintWriter;
  * 简单的计算器的实现
  * web 与API调用
  */
-@WebServlet(name = "Calculation", value = "/calculation.do")
+@WebServlet(name = "Calculation", value = "/Calculation.do")
 public class Calculation extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -56,8 +56,6 @@ public class Calculation extends HttpServlet {
                 out.println("计算结果为:"+res);
                 out.println("<BR><a href='javascript:history.go(-1)'>点此放回上一页</a>");
             }
-
-
         }
     }
 

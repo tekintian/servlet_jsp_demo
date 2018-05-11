@@ -42,6 +42,12 @@ public class SqlHelper {
 
     }
 
+    /**
+     * 直接返回数据库结果集, 没有结果直接返回 null
+     * 此方法不推荐使用，放回的结果集使用后需要及时关闭
+     * @param sqlstr
+     * @return rs
+     */
     public ResultSet executeQuery(String sqlstr) {
         Statement stmt = null;
         try {

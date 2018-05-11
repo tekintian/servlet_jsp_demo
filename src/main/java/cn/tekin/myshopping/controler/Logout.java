@@ -18,6 +18,9 @@ public class Logout extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
+
         //删除SESSION
         request.getSession().removeAttribute("loginUser");
 
@@ -27,7 +30,7 @@ public class Logout extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("成功退出！");
         response.setStatus(302);
-        response.setHeader("Refresh", "3;url=" + request.getServletContext().getInitParameter("HOME_URL") +
+        response.setHeader("Refresh", "2;url=" + request.getServletContext().getInitParameter("HOME_URL") +
                 "myshopping.jsp");
         return;
 
